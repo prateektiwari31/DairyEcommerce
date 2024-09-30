@@ -1,0 +1,45 @@
+{% extends 'dairy/base.html' %}
+
+{% load static %}
+
+{% block banner-slider %}
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static "app/images/banner/b1.jpg" %}" class="d-block w-100" alt="Banner img">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "app/images/banner/b2.jpg" %}" class="d-block w-100" alt="Banner img">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "app/images/banner/b3.jpg" %}" class="d-block w-100" alt="Banner img">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static "app/images/banner/b4.jpg" %}" class="d-block w-100" alt="Banner img">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endblock banner-slider %}
+{% block tilte %}
+  About
+{% endblock %}
+
+{% block main-content %}
+<div class="container mt-3">
+  <br />
+  <h1 class="text-center">About Us</h1>
+  <br />
+  <div class="row container mb-5">
+    <p class="fs-4 text-center ">Parth Dairy is passionately committed to bringing you the finest quality dairy products, crafted with care and sourced from local farmers who adhere to the highest ethical and sustainable practices. Our diverse product range includes fresh milk, rich and creamy yogurt, flavorful cheeses, traditional butter, pure ghee, and much more, ensuring we cater to the varied tastes and needs of our customers. Every product is produced using state-of-the-art technology and undergoes rigorous quality checks to guarantee exceptional purity, nutrition, and taste. At Parth Dairy, we don’t just prioritize quality—we are also deeply invested in promoting sustainability and environmental responsibility, employing eco-friendly packaging and green production methods. Our mission is to offer delicious, healthy dairy products that enhance the well-being of our customers while contributing to a healthier planet. By choosing Parth Dairy, you're choosing a brand that cares about your health, your satisfaction, and the future of our environment.</p>
+    
+  </div>
+</div>
+{% endblock main-content %}
